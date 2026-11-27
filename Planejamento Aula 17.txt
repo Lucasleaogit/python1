@@ -1,0 +1,77 @@
+# PLANEJAMENTO INICIAL
+
+**NOME:**   Lucas Cury Leão
+**TURMA:**  039
+**DATA:** 17/11/2026
+
+### Objetivo do programa:
+Verificar se o solicitante atende aos requisitos necessários e identificar se um equipamento precisa ser encaminhado para manutenção.
+
+### Entradas e significado das respostas:
+- **Cadastro ativo:** 1 para sim, 0 para não.
+- **Treinamento concluído:** 1 para sim, 0 para não.
+- **Equipamento com defeito:** 1 para sim, 0 para não.
+- **Revisão vencida:** 1 para sim, 0 para não.
+
+### Regras que precisam ser respeitadas:
+- O solicitante só atende aos requisitos se possuir cadastro ativo E treinamento concluído.
+- O equipamento deve ser encaminhado para manutenção se apresentar defeito OU estiver com a revisão vencida.
+- As respostas devem ser informadas utilizando 1 (sim) ou 0 (não).
+- As duas verificações devem ser realizadas independentemente.
+
+### Passos numerados da solução:
+1. Perguntar se o cadastro do solicitante está ativo.
+2. Perguntar se o treinamento foi concluído.
+3. Perguntar se o equipamento apresenta defeito.
+4. Perguntar se a revisão do equipamento está vencida.
+5. Verificar se o cadastro está ativo E o treinamento foi concluído.
+6. Verificar se o equipamento apresenta defeito OU se a revisão está vencida.
+7. Exibir o resultado da verificação do solicitante.
+8. Exibir o resultado da verificação do equipamento.
+
+### Saídas possíveis de cada verificação:
+
+**Solicitante:**
+- Requisitos atendidos.
+- Requisitos não atendidos.
+
+**Equipamento:**
+- Encaminhar o equipamento para manutenção.
+- Não há indicação de manutenção pela regra.
+
+---
+
+# SIMULAÇÃO ANTES DO CÓDIGO
+
+### Dados escolhidos:
+- Cadastro ativo: 1 (Sim).
+- Treinamento concluído: 1 (Sim).
+- Equipamento com defeito: 0 (Não).
+- Revisão vencida: 1 (Sim).
+
+### Passos percorridos e decisões tomadas:
+1. O cadastro está ativo, portanto a primeira condição é verdadeira.
+2. O treinamento foi concluído, portanto a segunda condição também é verdadeira.
+3. Como as duas condições são verdadeiras, os requisitos do solicitante são atendidos.
+4. O equipamento não apresenta defeito, portanto essa condição é falsa.
+5. A revisão está vencida, portanto essa condição é verdadeira.
+6. Como pelo menos uma das condições de manutenção é verdadeira, o equipamento deve ser encaminhado para manutenção.
+
+### Resultado previsto para o solicitante:
+Os requisitos do solicitante são atendidos.
+
+### Resultado previsto para o equipamento:
+Encaminhar o equipamento para manutenção.
+
+---
+
+# CONFERÊNCIA COM O DOCENTE
+
+### Orientação recebida e ajustes necessários:
+A preencher após a conferência com o docente.
+
+---
+
+# PLANEJAMENTO REVISADO
+
+Acrescentar as mudanças necessárias após a orientação do docente. Caso nenhuma alteração seja necessária, manter o planejamento inicial.

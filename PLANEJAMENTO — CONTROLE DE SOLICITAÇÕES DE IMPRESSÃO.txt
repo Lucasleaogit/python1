@@ -1,0 +1,91 @@
+PLANEJAMENTO — CONTROLE DE SOLICITAÇÕES DE IMPRESSÃO
+Aula 25/11/2026 — quarta-feira
+Nome: Lucas Cury Leão
+Turma: 039
+
+1. OBJETIVO, ENTRADAS E VALORES VÁLIDOS
+Objetivo: registrar exatamente quatro solicitações de impressão, somar a
+quantidade de páginas de todas elas, contar quantas solicitações têm 20
+páginas ou mais e informar se o total ficou dentro do limite de 100 páginas
+(ou se ultrapassou). Ao final, mostrar o resumo e encerrar o registro.
+
+Entradas: a quantidade de páginas de cada solicitação, digitada pelo teclado.
+Serão quatro entradas, uma para cada solicitação.
+
+Valores válidos: números inteiros e positivos de páginas. Uma solicitação com
+20 páginas ou mais entra na contagem especial. Considerar somente entradas
+válidas; não é necessário implementar validação.
+
+2. VARIÁVEIS NECESSÁRIAS, FINALIDADE E VALOR INICIAL
+- contador (ou i): controla qual solicitação está sendo registrada e garante
+  que o laço repita exatamente quatro vezes. Valor inicial: 1.
+- total_paginas: acumula a soma das páginas de todas as solicitações.
+  Valor inicial: 0.
+- qtd_20_ou_mais: conta quantas solicitações possuem 20 páginas ou mais.
+  Valor inicial: 0.
+- paginas: guarda a quantidade de páginas digitada em cada solicitação.
+  Não precisa de valor inicial fixo, pois será lida dentro do laço a cada
+  repetição.
+
+3. CONDIÇÃO PARA CONTINUAR E PASSOS NUMERADOS REPETIDOS
+Condição para continuar: enquanto o contador for menor ou igual a 4
+(ou seja, while contador <= 4). Isso garante exatamente quatro registros.
+
+Passos repetidos dentro do laço:
+1) Mostrar o número da solicitação atual antes de receber as páginas
+   (por exemplo: "Solicitação 1").
+2) Ler a quantidade de páginas digitada pelo teclado (variável paginas).
+3) Somar as páginas ao total: total_paginas = total_paginas + paginas.
+4) Verificar se paginas >= 20. Se sim, incrementar qtd_20_ou_mais em 1.
+5) Incrementar o contador em 1 para passar à próxima solicitação.
+
+4. COMO E QUANDO CADA VARIÁVEL MUDA E ATUALIZAÇÕES CONDICIONAIS
+- contador: começa em 1 e aumenta 1 a cada repetição, sempre ao final do
+  laço. É o que controla o término das quatro solicitações.
+- total_paginas: começa em 0 e é atualizado em toda repetição, somando o
+  valor de paginas. Não depende de condição: soma sempre.
+- qtd_20_ou_mais: começa em 0 e só é atualizado quando a condição
+  paginas >= 20 for verdadeira. Se a solicitação tiver menos de 20 páginas,
+  essa variável não muda.
+- paginas: muda a cada repetição, pois recebe uma nova entrada do teclado.
+  É usada na soma e na verificação da condição de 20 páginas ou mais.
+
+5. CONDIÇÃO DE TÉRMINO E INFORMAÇÕES APRESENTADAS AO FINAL
+Condição de término: quando o contador passar de 4 (contador > 4), o laço
+while termina. As quatro solicitações são registradas mesmo que o total
+ultrapasse 100 páginas.
+
+Ao final, mostrar:
+- o total de páginas (total_paginas);
+- a quantidade de solicitações com pelo menos 20 páginas (qtd_20_ou_mais);
+- "Dentro do limite" se total_paginas <= 100, ou "Acima do limite" se
+  total_paginas > 100;
+- "Registro encerrado" uma única vez.
+
+REVISÕES
+[
+LIMITE = 100
+TOTAL_SOLICITACOES = 4
+PAGINAS_ESPECIAL = 20
+
+total_paginas = 0
+qtd_especiais = 0
+solicitacao = 1
+
+while solicitacao <= TOTAL_SOLICITACOES:
+    print(f"Solicitação {solicitacao}")
+    paginas = int(input("Quantidade de páginas: "))
+    total_paginas += paginas
+    if paginas >= PAGINAS_ESPECIAL:
+        qtd_especiais += 1
+    solicitacao += 1
+
+print()
+print(f"Total de páginas: {total_paginas}")
+print(f"Solicitações com 20 páginas ou mais: {qtd_especiais}")
+if total_paginas <= LIMITE:
+    print("Dentro do limite")
+else:
+    print("Acima do limite")
+print("Registro encerrado")]
+Sem alterações.

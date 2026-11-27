@@ -1,0 +1,46 @@
+Nome completo: Lucas Cury Leão 
+Turma: 039    Data: 16/11
+ALGORITMO: distancia = float(input("Digite a distância em Quilometros: "))
+
+if distancia <= 5:
+    print("O valor do frete é R$ 8,00")
+elif distancia <= 10:
+    print("O valor do frete é R$ 12,00")
+else:
+    print("O valor do frete é R$ 18,00")
+ 
+TESTE [ 1 ] 
+Distância informada: [ 4 ] km 
+Resultado esperado antes da execução: [ 8,00 ] 
+Saída real do Terminal: [ 8,00 ] 
+Comparação com a previsão: [ OK ] 
+Se houve falha: ajuste realizado e nova saída [ Sem novas entradas ]
+
+TESTE [ 2 ] 
+Distância informada: [ 5 ] km 
+Resultado esperado antes da execução: [ 8,00 ] 
+Saída real do Terminal: [ 8,00 ] 
+Comparação com a previsão: [ OK ] 
+Se houve falha: ajuste realizado e nova saída [ Sem novas entradas ]
+
+TESTE [ 3 ] 
+Distância informada: [ 6 ] km 
+Resultado esperado antes da execução: [ 12,00 ] 
+Saída real do Terminal: [ 12,00 ] 
+Comparação com a previsão: [ OK ] 
+Se houve falha: ajuste realizado e nova saída [ Sem novas entradas ]
+
+TESTE [ 4 ] 
+Distância informada: [ 10 ] km 
+Resultado esperado antes da execução: [ 12,00 ] 
+Saída real do Terminal: [ 12,00 ] 
+Comparação com a previsão: [ OK ] 
+Se houve falha: ajuste realizado e nova saída [ Sem novas entradas ]
+
+TESTE [ 5 ] 
+Distância informada: [ 11 ] km 
+Resultado esperado antes da execução: [ 18,00 ] 
+Saída real do Terminal: [ 18,00 ] 
+Comparação com a previsão: [ OK ] 
+Se houve falha: ajuste realizado e nova saída [ Sem novas entradas ]
+

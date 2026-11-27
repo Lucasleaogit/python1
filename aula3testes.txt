@@ -1,0 +1,36 @@
+Nome completo: Lucas Cury Leão
+Turma:  039   Data: 12/11
+ALGORITMO: Codigo do crachá usado na aula 1, porém com a adição de um
+
+TESTE [1 , 2 e 3]
+Entradas: participantes [10]; crachá [2.5]; lanche [7.5]
+Orçamento: [120, 100 e 80]
+Condição usada no if: [if Orcamento > precoDoEvento:
+    print("O orçamento é suficiente para o evento.")
+elif Orcamento == precoDoEvento:
+    print("O orçamento é suficiente para o evento, mas não sobra dinheiro.")
+else:
+    print("O orçamento não é suficiente para o evento.")]
+Previsão da condição: [True e false]
+Total e mensagem esperados: [Insira o número de participantes: 10
+Insira o orçamento disponível: 120
+O preço pra entrar é 10.0
+O preço do evento é 100.0
+O orçamento é suficiente para o evento.
+
+Insira o número de participantes: 10
+Insira o orçamento disponível: 100
+O preço pra entrar é 10.0
+O preço do evento é 100.0
+O orçamento é suficiente para o evento, mas não sobra dinheiro.
+
+Insira o número de participantes: 10
+Insira o orçamento disponível: 80
+O preço pra entrar é 10.0
+O preço do evento é 100.0
+O orçamento não é suficiente para o evento.
+]
+Total e mensagem observados no Terminal: [15]
+Comparação entre esperado e observado: [Dentro do esperado]
+Correção realizada: [Sem correções, sou foda]
+Nova execução após correção: [não se aplica]

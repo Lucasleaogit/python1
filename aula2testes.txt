@@ -1,0 +1,24 @@
+Nos testes comecei usando
+% input("Insira o numro de participantes: ") 
+precoDoCracha = bool(2.5) 
+precoDoLanche = bool(7.5) 
+precoDoEvento = ((precoDoCracha + precoDoLanche) * participantes) 
+print("O preço pra entrar é", precoDoCracha + precoDoLanche) print("O preço do evento é", precoDoEvento)%
+
+porem acabei encontrando os seguintes erros
+• Tipo do input(): A função input() sempre retorna uma string (texto), e não um número. Você precisa convertê-la usando int().
+• Nome de variável com espaço: Na segunda linha, para Crachá possui um espaço e não corresponde ao nome usado depois (precoDoCracha). Variáveis em Python não podem ter espaços.
+• Uso incorreto de bool(): A função bool() converte valores para verdadeiro (True) ou falso (False). Para números decimais com centavos, você deve usar float().
+• Multiplicação de texto: Como participantes era um texto e os preços eram booleanos, a conta multiplicaria um texto em vez de fazer um cálculo matemático.
+
+após corrigir isso fazendo
+%
+participantes = int(input("Insira o número de participantes: "))
+precoDoCracha = float(2.5)
+precoDoLanche = float(7.5)
+precoDoEvento = (precoDoCracha + precoDoLanche) * participantes
+
+print("O preço pra entrar é", precoDoCracha + precoDoLanche)
+print("O preço do evento é", precoDoEvento)
+%
+deu certo  
